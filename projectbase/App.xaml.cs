@@ -57,7 +57,7 @@ namespace projectbase
                 ImageLink = "https://vignette.wikia.nocookie.net/kaamelott-officiel/images/1/14/Gueni%C3%A8vre.jpg/revision/latest/top-crop/width/360/height/450?cb=20131014040706&path-prefix=fr",
                 BackgroundImageLink = "https://www.erenumerique.fr/wp-content/uploads/2019/04/kaamelott.jpg"
             });
-            MainPage = new MyTabbedPage();
+            MainPage = new NavigationPage(new MyTabbedPage());
         }
 
         protected override void OnStart()

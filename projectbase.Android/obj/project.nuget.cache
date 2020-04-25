@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "M4Oz/emeG7HWk4AXMbUP9XZDLtRBSPGNA5k+xVXcg44oJHN8e5A0UTyUqPr58zWcTC37fJ672B3kCf2DQiByGg==",
+  "dgSpecHash": "AO8o1+o+3kFFVMCsExow3PT8KeilPkmdNA68BfYX3t6xUEh5x/BIKIMzR8AtxCE23+CKCC/mhpqzbelqnhLoRw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.Android\\projectbase.Android.csproj",
+  "projectFilePath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase.Android\\projectbase.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.common\\1.1.1.3\\xamarin.android.arch.core.common.1.1.1.3.nupkg.sha512",
     "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.android.arch.core.runtime\\1.1.1.3\\xamarin.android.arch.core.runtime.1.1.1.3.nupkg.sha512",

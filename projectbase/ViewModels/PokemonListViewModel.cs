@@ -17,21 +17,21 @@ namespace projectbase
             set
             {
                 SetProperty(ref pokemonSelected, value);
-                /*if (value != null)
+                if (value != null)
                 {
                     Device.BeginInvokeOnMainThread(async () =>
                     {
-                        await Application.Current.MainPage.Navigation.PushAsync(new MainPage(userSelected));
-                        UserSelected = null;
-                        
+                        await Application.Current.MainPage.Navigation.PushAsync(new PokemonPage(value));
+                        PokemonSelected = null;
                     });
-                }*/
+                }
             }
         }
 
         public PokemonListViewModel()
         {
             Pokemons = new ObservableCollection<Pokemon>(App.Pokemons);
+            //PokemonSelected = null;
         }
 
         public void Refresh()

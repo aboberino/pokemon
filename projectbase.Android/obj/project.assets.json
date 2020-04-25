@@ -1908,11 +1908,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.Android\\projectbase.Android.csproj",
+      "projectUniqueName": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase.Android\\projectbase.Android.csproj",
       "projectName": "projectbase.Android",
-      "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.Android\\projectbase.Android.csproj",
+      "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase.Android\\projectbase.Android.csproj",
       "packagesPath": "C:\\Users\\ngeor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.Android\\obj\\",
+      "outputPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -1933,8 +1933,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase\\projectbase.csproj": {
-              "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase\\projectbase.csproj"
+            "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase\\projectbase.csproj": {
+              "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase\\projectbase.csproj"
             }
           }
         }

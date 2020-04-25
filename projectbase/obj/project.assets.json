@@ -606,11 +606,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase\\projectbase.csproj",
+      "projectUniqueName": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase\\projectbase.csproj",
       "projectName": "projectbase",
-      "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase\\projectbase.csproj",
+      "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase\\projectbase.csproj",
       "packagesPath": "C:\\Users\\ngeor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase\\obj\\",
+      "outputPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\",

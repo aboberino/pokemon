@@ -956,11 +956,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.iOS\\projectbase.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase.iOS\\projectbase.iOS.csproj",
       "projectName": "projectbase.iOS",
-      "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.iOS\\projectbase.iOS.csproj",
+      "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase.iOS\\projectbase.iOS.csproj",
       "packagesPath": "C:\\Users\\ngeor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.iOS\\obj\\",
+      "outputPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -981,8 +981,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase\\projectbase.csproj": {
-              "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase\\projectbase.csproj"
+            "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase\\projectbase.csproj": {
+              "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN2\\pokemon\\projectbase\\projectbase.csproj"
             }
           }
         }
