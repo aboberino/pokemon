@@ -950,24 +950,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bob\\.nuget\\packages\\": {},
+    "C:\\Users\\ngeor\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Document\\cours\\Cross-plateforme\\TP4\\projectbase.iOS\\projectbase.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.iOS\\projectbase.iOS.csproj",
       "projectName": "projectbase.iOS",
-      "projectPath": "D:\\Document\\cours\\Cross-plateforme\\TP4\\projectbase.iOS\\projectbase.iOS.csproj",
-      "packagesPath": "C:\\Users\\bob\\.nuget\\packages\\",
-      "outputPath": "D:\\Document\\cours\\Cross-plateforme\\TP4\\projectbase.iOS\\obj\\",
+      "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.iOS\\projectbase.iOS.csproj",
+      "packagesPath": "C:\\Users\\ngeor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\bob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ngeor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -981,8 +981,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "D:\\Document\\cours\\Cross-plateforme\\TP4\\projectbase\\projectbase.csproj": {
-              "projectPath": "D:\\Document\\cours\\Cross-plateforme\\TP4\\projectbase\\projectbase.csproj"
+            "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase\\projectbase.csproj": {
+              "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase\\projectbase.csproj"
             }
           }
         }

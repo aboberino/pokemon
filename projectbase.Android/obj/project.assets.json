@@ -1902,24 +1902,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bob\\.nuget\\packages\\": {},
+    "C:\\Users\\ngeor\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Document\\cours\\Cross-plateforme\\TP4\\projectbase.Android\\projectbase.Android.csproj",
+      "projectUniqueName": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.Android\\projectbase.Android.csproj",
       "projectName": "projectbase.Android",
-      "projectPath": "D:\\Document\\cours\\Cross-plateforme\\TP4\\projectbase.Android\\projectbase.Android.csproj",
-      "packagesPath": "C:\\Users\\bob\\.nuget\\packages\\",
-      "outputPath": "D:\\Document\\cours\\Cross-plateforme\\TP4\\projectbase.Android\\obj\\",
+      "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.Android\\projectbase.Android.csproj",
+      "packagesPath": "C:\\Users\\ngeor\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\bob\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\ngeor\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1933,8 +1933,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "D:\\Document\\cours\\Cross-plateforme\\TP4\\projectbase\\projectbase.csproj": {
-              "projectPath": "D:\\Document\\cours\\Cross-plateforme\\TP4\\projectbase\\projectbase.csproj"
+            "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase\\projectbase.csproj": {
+              "projectPath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase\\projectbase.csproj"
             }
           }
         }
