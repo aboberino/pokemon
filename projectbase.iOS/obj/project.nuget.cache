@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "isDw79yyS/GOOWaiYXISIOEPN5TRAfnuIqV227eWGtfJXkCvQOPVL/l5foSxjRGTZfhYD0NgD/hGd2PLErtdgw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\ngeor\\Desktop\\COURS\\XAMARIN\\pokemon\\projectbase.iOS\\projectbase.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ngeor\\.nuget\\packages\\xamarin.essentials\\1.5.1\\xamarin.essentials.1.5.1.nupkg.sha512",
+    "C:\\Users\\ngeor\\.nuget\\packages\\xamarin.forms\\4.5.0.396\\xamarin.forms.4.5.0.396.nupkg.sha512"
+  ],
+  "logs": []
+}

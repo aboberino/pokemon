@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="projectbase.MyTabbedPage" xmlns:local="clr-namespace:projectbase;assembly=projectbase">
-    <local:Exercice1 Title="Exercice 1"/>
-    <local:Exercice2 Title="Exercice 2"/>
-    <local:Exercice3 Title="Exercice 3"/>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="projectbase.MyTabbedPage" xmlns:local="clr-namespace:projectbase;assembly=projectbase"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom"
+            BarBackgroundColor="#2196F3"
+            BarTextColor="White">
+    <local:Exercice1 Title="Exercice1" IconImageSource="icons8_Home_64px"/>
+    <local:Exercice1 Title="Exercice2" IconImageSource="icons8_Instagram_64px"/>
+    <local:Exercice1 Title="Exercice3" IconImageSource="icons8_Settings_64px"/>
 </TabbedPage>
