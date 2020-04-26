@@ -10,7 +10,7 @@ namespace projectbase
         public TrainerListPage()
         {
             InitializeComponent();
-            BindingContext = new Exercice1ViewModel();
+            BindingContext = new TrainerListViewModel();
         }
     }
 }
