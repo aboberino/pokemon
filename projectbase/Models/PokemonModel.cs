@@ -24,8 +24,14 @@ namespace projectbase.Models
         public List<PokemonStat> Stats { get => stats; set => SetProperty(ref stats, value); }
         List<PokemonType> types;
         public List<PokemonType> Types { get => types; set => SetProperty(ref types, value); }
+        string type1;
+        public string Type1 { get => type1; set => SetProperty(ref type1, value); }
+        string type2;
+        public string Type2 { get => type2; set => SetProperty(ref type2, value); }
 
 
         public PokemonModel() { }
+
+        
     }
 }

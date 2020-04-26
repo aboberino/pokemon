@@ -37,7 +37,9 @@ namespace projectbase
                             Order = pokemonRecuperedMdr.Order,
                             Sprites = pokemonRecuperedMdr.Sprites.FrontDefault,
                             Stats = pokemonRecuperedMdr.Stats,
-                            Types = pokemonRecuperedMdr.Types
+                            Types = pokemonRecuperedMdr.Types,
+                            Type1 = pokemonRecuperedMdr.Types[0].Type.Name,
+                            Type2 = pokemonRecuperedMdr.Types.Count > 1 ? pokemonRecuperedMdr.Types[1].Type.Name : ""
                         };
 
                         await Application.Current.MainPage.Navigation.PushAsync(new PokemonPage(pokemonDetailled));
