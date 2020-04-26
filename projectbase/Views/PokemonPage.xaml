@@ -24,6 +24,9 @@
 
             <Label Text="Pokedex N°" TextColor="Gray" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" FontSize="15"/>
             <Label Text="{Binding Id}" TextColor="Gray" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" Font="Bold, 18"/>
+            <!--<Image Source="{Binding getType()}" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Fill" HeightRequest="150"/>-->
+            
+
             <Label Text="{Binding Name}" Grid.Row="2" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" FontSize="35"/>
         </Grid>
         
@@ -59,7 +62,38 @@
                 <Label Text=": " FontSize="17"/>
                 <Label Text="{Binding Stats[0].BaseStat}" FontSize="17"/>
             </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="{Binding Stats[1].Stat.Name}" FontSize="17"/>
+                <Label Text=": " FontSize="17"/>
+                <Label Text="{Binding Stats[1].BaseStat}" FontSize="17"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="{Binding Stats[2].Stat.Name}" FontSize="17"/>
+                <Label Text=": " FontSize="17"/>
+                <Label Text="{Binding Stats[2].BaseStat}" FontSize="17"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="{Binding Stats[3].Stat.Name}" FontSize="17"/>
+                <Label Text=": " FontSize="17"/>
+                <Label Text="{Binding Stats[3].BaseStat}" FontSize="17"/>
+            </StackLayout>
+            
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="{Binding Stats[4].Stat.Name}" FontSize="17"/>
+                <Label Text=": " FontSize="17"/>
+                <Label Text="{Binding Stats[4].BaseStat}" FontSize="17"/>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="{Binding Stats[5].Stat.Name}" FontSize="17"/>
+                <Label Text=": " FontSize="17"/>
+                <Label Text="{Binding Stats[5].BaseStat}" FontSize="17"/>
+            </StackLayout>
         </StackLayout>
+        
         <Button Text="Aimez-moi svp" Command="{Binding OnButtonClickedCommand}" VerticalOptions="EndAndExpand" BackgroundColor="CornflowerBlue" TextColor="White" Margin="20,0,20,20"/>
     </StackLayout>
 
