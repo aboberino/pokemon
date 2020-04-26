@@ -9,7 +9,7 @@
     
     <StackLayout Orientation="Vertical">
         <!--Background-->
-        <Image Source="pokemon_clouds" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Fill" HeightRequest="150"/>
+        <Image Source="trainer_bg" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Fill" HeightRequest="200"/>
 
         <Grid>
             <Grid.RowDefinitions>
@@ -23,10 +23,10 @@
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Text="{Binding Name}" Grid.Row="2" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" FontSize="35"/>
+            <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3" HorizontalTextAlignment="End" FontSize="20" TranslationY="-200" TranslationX="-20"/>
         </Grid>
 
-        <Frame CornerRadius="100" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" Padding="0" IsClippedToBounds="True" Grid.Row="0" Grid.Column="1" TranslationY="-130" Margin="-75">
+        <Frame CornerRadius="100" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" Padding="0" IsClippedToBounds="True" Grid.Row="0" Grid.Column="1" TranslationY="-130" Margin="-120">
             <Image Source="{Binding Sprite}" Aspect="Fill"/>
         </Frame>
 
@@ -43,9 +43,6 @@
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-
-            
-            
             
             <Image Source="{Binding PokemonSprite1}" Grid.Row="0" Grid.Column="0"/>
             <Label Text="{Binding Pokemon1}" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="17"/>

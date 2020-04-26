@@ -59,9 +59,21 @@ namespace projectbase
                 Pokemon5 = "bulbasaur",
                 Pokemon6 = "pidgeot"
             };
+            Trainer t3 = new Trainer()
+            {
+                Name = "Swimmer-M-B",
+                Sprite = "https://myuu.xyz/images/trainers/Swimmer-M-B.png",
+                Pokemon1 = "pidgeotto",
+                Pokemon2 = "pikachu",
+                Pokemon3 = "ivysaur",
+                Pokemon4 = "ditto",
+                Pokemon5 = "bulbasaur",
+                Pokemon6 = "pidgeot"
+            };
             await App.Database.DeleteAllTrainerAsync();
             await App.Database.SaveTrainerAsync(t1);
             await App.Database.SaveTrainerAsync(t2);
+            await App.Database.SaveTrainerAsync(t3);
             Trainers = new ObservableCollection<Trainer>(await App.Database.GetTrainerAsync());
         }
     }
