@@ -6,9 +6,10 @@
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <StackLayout Padding="20">
-                                <Label Text="{Binding Username}"/>
-                                <Label Text="{Binding Description}"/>
+                            <StackLayout Padding="20" Orientation="Horizontal">
+                                <Label Text="{Binding Id}"/>
+                                <Label Text="       "/>
+                                <Label Text="{Binding Name}"/>
                             </StackLayout>
                         </ViewCell>
                     </DataTemplate>

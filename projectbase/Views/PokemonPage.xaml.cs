@@ -14,7 +14,7 @@ namespace projectbase
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class PokemonPage : ContentPage
     {
-        public PokemonPage(Pokemon pokemon)
+        public PokemonPage(PokemonModel pokemon)
         {
             InitializeComponent();
             BindingContext = new PokemonViewModel(pokemon);

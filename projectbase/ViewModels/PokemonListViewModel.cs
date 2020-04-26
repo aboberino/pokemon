@@ -3,15 +3,18 @@ using System;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Xamarin.Forms;
+using PokeApiNet;
+using System.Collections.Generic;
 
 namespace projectbase
 {
     public class PokemonListViewModel : BaseViewModel
     {
-        ObservableCollection<Pokemon> pokemons;
-        public ObservableCollection<Pokemon> Pokemons { get => pokemons; set => SetProperty(ref pokemons, value); }
-        Pokemon pokemonSelected;
-        public Pokemon PokemonSelected
+        PokeApiClient client;
+        ObservableCollection<PokemonModel> pokemons;
+        public ObservableCollection<PokemonModel> Pokemons { get => pokemons; set => SetProperty(ref pokemons, value); }
+        PokemonModel pokemonSelected;
+        public PokemonModel PokemonSelected
         {
             get => PokemonSelected;
             set
@@ -21,23 +24,55 @@ namespace projectbase
                 {
                     Device.BeginInvokeOnMainThread(async () =>
                     {
-                        await Application.Current.MainPage.Navigation.PushAsync(new PokemonPage(value));
+
+                        Pokemon pokemonRecuperedMdr = await client.GetResourceAsync<Pokemon>(value.Name);
+
+                        PokemonModel pokemonDetailled = new PokemonModel()
+                        {
+                            Id = pokemonRecuperedMdr.Id,
+                            Name = pokemonRecuperedMdr.Name,
+                            Height = pokemonRecuperedMdr.Height,
+                            Weight = pokemonRecuperedMdr.Weight,
+                            BaseExperience = pokemonRecuperedMdr.BaseExperience,
+                            Order = pokemonRecuperedMdr.Order,
+                            Sprites = pokemonRecuperedMdr.Sprites.FrontDefault,
+                            Stats = pokemonRecuperedMdr.Stats,
+                            Types = pokemonRecuperedMdr.Types
+                        };
+
+                        await Application.Current.MainPage.Navigation.PushAsync(new PokemonPage(pokemonDetailled));
                         PokemonSelected = null;
                     });
                 }
             }
         }
 
+
+
+
         public PokemonListViewModel()
         {
-            Pokemons = new ObservableCollection<Pokemon>(App.Pokemons);
-            //PokemonSelected = null;
+            client = new PokeApiClient();
+            Pokemons = new ObservableCollection<PokemonModel>();
+
+            fetchData();
+
         }
 
-        public void Refresh()
+        public async void fetchData()
         {
-            Pokemons = new ObservableCollection<Pokemon>(App.Pokemons);
+            Pokedex pokedex = await client.GetResourceAsync<Pokedex>(1);
+            List<PokemonEntry> listOfPokemon = pokedex.PokemonEntries;
 
+            foreach (PokemonEntry poke in listOfPokemon)
+            {
+                Pokemons.Add(new PokemonModel()
+                {
+                    Id = poke.EntryNumber,
+                    Name = poke.PokemonSpecies.Name
+                });
+            }
         }
+            
     }
 }

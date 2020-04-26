@@ -1,13 +1,11 @@
 ﻿using PokeApiNet;
-using projectbase.Models;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
-namespace projectbase.ViewModels
+namespace projectbase.Models
 {
-    class PokemonViewModel : BaseViewModel
+    public class PokemonModel : BaseViewModel
     {
+
         int id;
         public int Id { get => id; set => SetProperty(ref id, value); }
         string name;
@@ -27,18 +25,7 @@ namespace projectbase.ViewModels
         List<PokemonType> types;
         public List<PokemonType> Types { get => types; set => SetProperty(ref types, value); }
 
-        public PokemonViewModel(PokemonModel pokemonModel)
-        {
-            Id = pokemonModel.Id;
-            Name = pokemonModel.Name;
-            Sprites = pokemonModel.Sprites;
-            Weight = pokemonModel.Weight;
-            Order = pokemonModel.Order;
-            Height = pokemonModel.Height;
-            BaseExperience = pokemonModel.BaseExperience;
-            Stats = pokemonModel.Stats;
-            Types = pokemonModel.Types;
-        }
+
+        public PokemonModel() { }
     }
 }
-
