@@ -10,7 +10,7 @@ namespace projectbase
         public BattlePage()
         {
             InitializeComponent();
-            BindingContext = new Exercice2ViewModel();
+            BindingContext = new BattleViewModel();
         }
     }
 }
