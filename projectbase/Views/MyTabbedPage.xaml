@@ -5,7 +5,8 @@
             BarBackgroundColor="#2196F3"
             BarTextColor="White"
             SelectedTabColor="White">
-    <local:TrainerListPage Title="Trainers" IconImageSource="icons8_Home_64px"/>
-    <local:BattlePage Title="Battle" IconImageSource="icons8_Instagram_64px"/>
-    <local:PokemonListPage Title="Pokemons" IconImageSource="icons8_Settings_64px"/>
+
+    <local:TrainerListPage Title="Trainers" IconImageSource="pokemon_trainer"/>
+    <local:BattlePage Title="Battle" IconImageSource="pokemon_battle"/>
+    <local:PokemonListPage Title="Pokemons" IconImageSource="pokemon_pokedex"/>
 </TabbedPage>
