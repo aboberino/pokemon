@@ -39,6 +39,10 @@
 
 
         <StackLayout Margin="20,0,20,25">
+
+            <Image Source="{Binding Type1}" WidthRequest="50" HeightRequest="50"></Image>
+            <Image Source="{Binding Type2}" WidthRequest="50" HeightRequest="50"></Image>
+            
             <BoxView BackgroundColor="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
                <!--Informations-->
             <Label Text="Informations" Font="Bold, 20" TextColor="Black"/>
