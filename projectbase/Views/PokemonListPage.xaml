@@ -7,6 +7,7 @@
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout Padding="20" Orientation="Horizontal">
+                                <Label Text="N°"/>
                                 <Label Text="{Binding Id}"/>
                                 <Label Text="       "/>
                                 <Label Text="{Binding Name}"/>

@@ -7,8 +7,9 @@
              x:Class="projectbase.PokemonPage">
 
     <StackLayout Orientation="Vertical">
-        <Image Source="{Binding BackgroundImageLink}" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Fill" HeightRequest="150"/>
-
+        <!--Background-->
+        <Image Source="pokemon_bg2.png" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Fill" HeightRequest="150"/>
+        
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="25"/>
@@ -17,29 +18,47 @@
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="2*"/>
+                <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
-            <Label Text="Vues" TextColor="Gray" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" FontSize="15"/>
-            <Label Text="{Binding NbViews}" TextColor="Gray" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" Font="Bold, 18"/>
-            <Label Text="Partages" TextColor="Gray" Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" FontSize="15"/>
-            <Label x:Name="compteur" Text="{Binding NbShare}" TextColor="Gray" Grid.Row="1" Grid.Column="2" HorizontalOptions="Center" Font="Bold, 18"/>
-            <Label Text="{Binding Username}" Grid.Row="2" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" FontSize="35"/>
+            <Label Text="Pokedex N°" TextColor="Gray" Grid.Row="0" Grid.Column="0" HorizontalOptions="Center" FontSize="15"/>
+            <Label Text="{Binding Id}" TextColor="Gray" Grid.Row="1" Grid.Column="0" HorizontalOptions="Center" Font="Bold, 18"/>
+            <Label Text="{Binding Name}" Grid.Row="2" Grid.ColumnSpan="3" HorizontalTextAlignment="Center" FontSize="35"/>
         </Grid>
+        
+        <!--<Frame CornerRadius="100" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" Padding="0" IsClippedToBounds="True" Grid.Row="0" Grid.Column="1" TranslationY="-130" Margin="-75">
+            <Image Source="{Binding Sprites}" Aspect="Fill"/>
+        </Frame>-->
+        <!--Icons-->
+        <Image Source="{Binding Sprites}" Aspect="Fill" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center"  Grid.Row="0" Grid.Column="1" TranslationY="-180" Margin="-75" />
 
-        <Frame CornerRadius="100" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" Padding="0" IsClippedToBounds="True" Grid.Row="0" Grid.Column="1" TranslationY="-130" Margin="-75">
-            <Image Source="{Binding ImageLink}" Aspect="Fill"/>
-        </Frame>
+
 
         <StackLayout Margin="20,0,20,25">
             <BoxView BackgroundColor="Gray" HeightRequest="1" HorizontalOptions="FillAndExpand"/>
-
+               <!--Informations-->
             <Label Text="Informations" Font="Bold, 20" TextColor="Black"/>
-            <Label Text="{Binding BirthDate}" FontSize="17"/>
-            <Label Text="{Binding BirthPlace}" FontSize="17"/>
-            <Label Text="Description" Font="Bold, 20" TextColor="Black"/>
-            <Label FontSize="17" HorizontalTextAlignment="End" Text="{Binding Description}"/>
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Weight :" FontSize="17"/>
+                <Label Text="{Binding Weight}" FontSize="17"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="Height :" FontSize="17"/>
+                <Label Text="{Binding Height}" FontSize="17"/>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="BaseExperience :" FontSize="17"/>
+                <Label Text="{Binding BaseExperience}" FontSize="17"/>
+            </StackLayout>
+            
+            <!-- Stats-->
+            <Label Text="Stats" Font="Bold, 20" TextColor="Black"/>
+            <StackLayout Orientation="Horizontal" >
+                <Label Text="{Binding Stats[0].Stat.Name}" FontSize="17"/>
+                <Label Text=": " FontSize="17"/>
+                <Label Text="{Binding Stats[0].BaseStat}" FontSize="17"/>
+            </StackLayout>
         </StackLayout>
         <Button Text="Aimez-moi svp" Command="{Binding OnButtonClickedCommand}" VerticalOptions="EndAndExpand" BackgroundColor="CornflowerBlue" TextColor="White" Margin="20,0,20,20"/>
     </StackLayout>
