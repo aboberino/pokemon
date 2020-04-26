@@ -1,6 +1,8 @@
 ﻿using projectbase.Models;
+using projectbase.Views;
 using System;
 using System.Collections.ObjectModel;
+using Xamarin.Forms;
 
 namespace projectbase
 {
@@ -8,6 +10,24 @@ namespace projectbase
     {
         ObservableCollection<Trainer> trainers;
         public ObservableCollection<Trainer> Trainers { get => trainers; set => SetProperty(ref trainers, value); }
+        Trainer trainerSelected;
+        public Trainer TrainerSelected
+        {
+            get => TrainerSelected;
+            set
+            {
+                SetProperty(ref trainerSelected, value);
+                if (value != null)
+                {
+                    Device.BeginInvokeOnMainThread(async () =>
+                    {
+                        await Application.Current.MainPage.Navigation.PushAsync(new TrainerPage(value));
+                        TrainerSelected = null;
+                    });
+                }
+            }
+        }
+
 
         public TrainerListViewModel()
         {
@@ -18,11 +38,26 @@ namespace projectbase
         {
             Trainer t1 = new Trainer()
             {
-                Name = "Sacha"
+                Name = "Rancher",
+                Sprite = "https://myuu.xyz/images/trainers/Rancher.png",
+                Pokemon1 = "charizard",
+                Pokemon2 = "pikachu",
+                Pokemon3 = "ivysaur",
+                Pokemon4 = "ditto",
+                Pokemon5 = "bulbasaur",
+                Pokemon6 = "pidgeot"
+
             };
             Trainer t2 = new Trainer()
             {
-                Name = "Red"
+                Name = "Dancer",
+                Sprite = "https://myuu.xyz/images/trainers/Dancer.png",
+                Pokemon1 = "pidgeotto",
+                Pokemon2 = "pikachu",
+                Pokemon3 = "ivysaur",
+                Pokemon4 = "ditto",
+                Pokemon5 = "bulbasaur",
+                Pokemon6 = "pidgeot"
             };
             await App.Database.DeleteAllTrainerAsync();
             await App.Database.SaveTrainerAsync(t1);

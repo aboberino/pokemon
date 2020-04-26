@@ -3,7 +3,7 @@
              xmlns:local1="clr-namespace:projectbase.Views.Controls" x:Class="projectbase.TrainerListPage" >
     <ContentPage.Content>
         <StackLayout>
-            <ListView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HasUnevenRows="True" ItemsSource="{Binding Trainers}">
+            <ListView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HasUnevenRows="True" ItemsSource="{Binding Trainers}" SelectedItem="{Binding TrainerSelected}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>

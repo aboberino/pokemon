@@ -13,6 +13,7 @@ namespace projectbase
     public partial class App : Application
     {
         static Database database;
+        
         public static Database Database
         {
             get
@@ -24,9 +25,22 @@ namespace projectbase
                 return database;
             }
         }
+        public static PokeApiClient client;
+        public static PokeApiClient Client
+        {
+            get
+            {
+                if (client == null)
+                {
+                    client = new PokeApiClient();
+                }
+                return client;
+            }
+        }
         public App()
         {
             InitializeComponent();
+            
             MainPage = new NavigationPage(new MyTabbedPage());
         }
                
