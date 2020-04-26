@@ -30,7 +30,7 @@ namespace projectbase
                         PokemonModel pokemonDetailled = new PokemonModel()
                         {
                             Id = pokemonRecuperedMdr.Id,
-                            Name = pokemonRecuperedMdr.Name,
+                            Name = pokemonRecuperedMdr.Name.Substring(0, 1).ToUpper()+ pokemonRecuperedMdr.Name.Substring(1, pokemonRecuperedMdr.Name.Length-1),
                             Height = pokemonRecuperedMdr.Height,
                             Weight = pokemonRecuperedMdr.Weight,
                             BaseExperience = pokemonRecuperedMdr.BaseExperience,
@@ -38,10 +38,9 @@ namespace projectbase
                             Sprites = pokemonRecuperedMdr.Sprites.FrontDefault,
                             Stats = pokemonRecuperedMdr.Stats,
                             Types = pokemonRecuperedMdr.Types,
-                            Type1 = pokemonRecuperedMdr.Types[0].Type.Name,
-                            Type2 = pokemonRecuperedMdr.Types.Count > 1 ? pokemonRecuperedMdr.Types[1].Type.Name : ""
+                            Type1 = pokemonRecuperedMdr.Types.Count > 1 ? pokemonRecuperedMdr.Types[1].Type.Name : pokemonRecuperedMdr.Types[0].Type.Name,
+                            Type2 = pokemonRecuperedMdr.Types.Count > 1 ? pokemonRecuperedMdr.Types[0].Type.Name : ""
                         };
-
                         await Application.Current.MainPage.Navigation.PushAsync(new PokemonPage(pokemonDetailled));
                         PokemonSelected = null;
                     });
@@ -71,7 +70,7 @@ namespace projectbase
                 Pokemons.Add(new PokemonModel()
                 {
                     Id = poke.EntryNumber,
-                    Name = poke.PokemonSpecies.Name
+                    Name = poke.PokemonSpecies.Name.Substring(0, 1).ToUpper() + poke.PokemonSpecies.Name.Substring(1, poke.PokemonSpecies.Name.Length - 1)
                 });
             }
         }
