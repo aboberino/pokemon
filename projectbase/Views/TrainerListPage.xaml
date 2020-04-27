@@ -3,17 +3,20 @@
              xmlns:local1="clr-namespace:projectbase.Views.Controls" x:Class="projectbase.TrainerListPage" >
     <ContentPage.Content>
         <StackLayout>
-            <ListView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HasUnevenRows="True" ItemsSource="{Binding Trainers}" SelectedItem="{Binding TrainerSelected}">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <StackLayout Padding="20" Orientation="Horizontal">
-                                <Label Text="{Binding Name}"/>
-                            </StackLayout>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+
+                <ListView HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" HasUnevenRows="True" ItemsSource="{Binding Trainers}" SelectedItem="{Binding TrainerSelected}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Padding="20" Orientation="Horizontal">
+                                    <Label Text="{Binding Name}"/>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Button Text="Add Trainer" Command="{Binding OnClickedAddTrainerButton}" HorizontalOptions="Fill" />
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
