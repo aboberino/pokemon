@@ -10,7 +10,6 @@ namespace projectbase
 {
     public class PokemonListViewModel : BaseViewModel
     {
-        PokeApiClient client;
         ObservableCollection<PokemonModel> pokemons;
         public ObservableCollection<PokemonModel> Pokemons { get => pokemons; set => SetProperty(ref pokemons, value); }
         PokemonModel pokemonSelected;
@@ -25,7 +24,7 @@ namespace projectbase
                     Device.BeginInvokeOnMainThread(async () =>
                     {
 
-                        Pokemon pokemonRecuperedMdr = await client.GetResourceAsync<Pokemon>(value.Name);
+                        Pokemon pokemonRecuperedMdr = await App.client.GetResourceAsync<Pokemon>(value.Name);
 
                         PokemonModel pokemonDetailled = new PokemonModel()
                         {
@@ -53,7 +52,7 @@ namespace projectbase
 
         public PokemonListViewModel()
         {
-            client = new PokeApiClient();
+            App.client = new PokeApiClient();
             Pokemons = new ObservableCollection<PokemonModel>();
 
             fetchData();
@@ -62,7 +61,7 @@ namespace projectbase
 
         public async void fetchData()
         {
-            Pokedex pokedex = await client.GetResourceAsync<Pokedex>(1);
+            Pokedex pokedex = await App.client.GetResourceAsync<Pokedex>(1);
             List<PokemonEntry> listOfPokemon = pokedex.PokemonEntries;
 
             foreach (PokemonEntry poke in listOfPokemon)

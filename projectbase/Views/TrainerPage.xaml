@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:controls="clr-namespace:projectbase.Views.Controls"
+             mc:Ignorable="d"
+             x:Class="projectbase.Views.TrainerPage">
+    
+    <StackLayout Orientation="Vertical">
+        <!--Background-->
+        <Image Source="trainer_bg" Aspect="Fill" HorizontalOptions="Fill" VerticalOptions="Fill" HeightRequest="200"/>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="50"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Label Text="{Binding Name}" Grid.Row="0" Grid.Column="2" Grid.ColumnSpan="3" HorizontalTextAlignment="End" FontSize="20" TranslationY="-200" TranslationX="-20"/>
+        </Grid>
+
+        <Frame CornerRadius="100" WidthRequest="150" HeightRequest="150" HorizontalOptions="Center" VerticalOptions="Center" Padding="0" IsClippedToBounds="True" Grid.Row="0" Grid.Column="1" TranslationY="-130" Margin="-120">
+            <Image Source="{Binding Sprite}" Aspect="Fill"/>
+        </Frame>
+
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="25"/>
+                <RowDefinition Height="75"/>
+                <RowDefinition Height="25"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            
+            <Image Source="{Binding PokemonSprite1}" Grid.Row="0" Grid.Column="0"/>
+            <Label Text="{Binding Pokemon1}" Grid.Row="1" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="17"/>
+            
+            <Image Source="{Binding PokemonSprite2}" Grid.Row="2" Grid.Column="0"/>
+            <Label Text="{Binding Pokemon2}" Grid.Row="3" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="17"/>
+            
+            <Image Source="{Binding PokemonSprite3}" Grid.Row="4" Grid.Column="0"/>
+            <Label Text="{Binding Pokemon3}" Grid.Row="5" Grid.Column="0" HorizontalTextAlignment="Center" FontSize="17"/>
+
+            <Image Source="{Binding PokemonSprite4}" Grid.Row="0" Grid.Column="1"/>
+            <Label Text="{Binding Pokemon4}" Grid.Row="1" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="17"/>
+
+            <Image Source="{Binding PokemonSprite5}" Grid.Row="2" Grid.Column="1"/>
+            <Label Text="{Binding Pokemon5}" Grid.Row="3" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="17"/>
+
+            <Image Source="{Binding PokemonSprite6}" Grid.Row="4" Grid.Column="1"/>
+            <Label Text="{Binding Pokemon6}" Grid.Row="5" Grid.Column="1" HorizontalTextAlignment="Center" FontSize="17"/>
+
+        </Grid>
+
+
+    </StackLayout>
+</ContentPage>
