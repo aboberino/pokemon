@@ -42,19 +42,23 @@ namespace projectbase
         async void AddTrainerButtonClicked()
         {
             string name = await Application.Current.MainPage.DisplayPromptAsync("Add Trainer", "Enter a Name");
-            Trainer newTrainer = new Trainer
+            if (name != null && name.Length > 0)
             {
-                Name = name,
-                Sprite = "https://myuu.xyz/images/trainers/Psychic-F-A.png",
-                Pokemon1 = "charizard",
-                Pokemon2 = "articuno",
-                Pokemon3 = "mewtwo",
-                Pokemon4 = "dragonair",
-                Pokemon5 = "dragonite",
-                Pokemon6 = "pidgeot"
-            };
-            await App.Database.SaveTrainerAsync(newTrainer);
-            Trainers = new ObservableCollection<Trainer>(await App.Database.GetTrainerAsync());
+                Trainer newTrainer = new Trainer
+                {
+                    Name = name,
+                    Sprite = "https://myuu.xyz/images/trainers/Psychic-F-A.png",
+                    Pokemon1 = "charizard",
+                    Pokemon2 = "articuno",
+                    Pokemon3 = "mewtwo",
+                    Pokemon4 = "dragonair",
+                    Pokemon5 = "dragonite",
+                    Pokemon6 = "pidgeot"
+                };
+                await App.Database.SaveTrainerAsync(newTrainer);
+                Trainers = new ObservableCollection<Trainer>(await App.Database.GetTrainerAsync());
+            }
+            
         }
 
         async void setData()

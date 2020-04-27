@@ -61,7 +61,7 @@ namespace projectbase
 
         public async void fetchData()
         {
-            Pokedex pokedex = await App.client.GetResourceAsync<Pokedex>(1);
+            Pokedex pokedex = await App.client.GetResourceAsync<Pokedex>(2);
             List<PokemonEntry> listOfPokemon = pokedex.PokemonEntries;
 
             foreach (PokemonEntry poke in listOfPokemon)
